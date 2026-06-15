@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <h2>🎧 Spotify</h2>
+
+            <ul>
+                <li>🏠 Home</li>
+                <li>🔍 Search</li>
+                <li>❤️ Your Library</li>
+            </ul>
+
+            <h3>Playlists</h3>
+
+            <div class="playlist">
+                <p>🔥 Top Hits 2026</p>
+                <p>🎵 Chill Vibes</p>
+                <p>🌙 Night Beats</p>
+                <p>💪 Workout Mix</p>
+            </div>
+
+        </div>
+
+
+        <!-- Main Content -->
+
+        <div class="main">
+
+
+            <h1>Now Playing</h1>
+
+
+            <div class="player-card">
+
+                <img id="cover" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600" alt="Album">
+
+
+                <h2 id="songTitle">
+                    Dream Beats
+                </h2>
+
+
+                <p id="artist">
+                    Unknown Artist
+                </p>
+
+
+            </div>
+
+
+            <!-- Controls -->
+
+            <div class="controls">
+
+                <button id="prev">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+
+
+                <button id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+
+
+                <button id="next">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Progress -->
+
+            <input type="range" id="progress" value="0">
+
+
+            <!-- Volume -->
+
+            <div class="volume">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <input type="range" id="volume" min="0" max="100" value="70">
+
+            </div>
+
+
+            <!-- Song List -->
+
+            <h2>Playlist</h2>
+
+
+            <div id="songs">
+
+                <div class="song">
+                    🎶 Dream Beats
+                </div>
+
+                <div class="song">
+                    🎶 Summer Night
+                </div>
+
+
+                <div class="song">
+                    🎶 Relax Mood
+                </div>
+
+
+                <div class="song">
+                    🎶 Energy Boost
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Audio -->
+    <audio id="audio">
+
+        <source src="songs/song1.mp3" type="audio/mp3">
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
